@@ -17,7 +17,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="d-flex col justify-content-end">
+      <div v-if="isSwedish" class="d-flex col-auto justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/about" class="nav-link">Om oss</router-link>
@@ -28,17 +28,38 @@
           <li class="nav-item">
             <router-link to="/gallery" class="nav-link">Galleri</router-link>
           </li>
+        </ul>
+      </div>
+      <div v-if="!isSwedish" class="d-flex col-auto justify-content-end">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <font-awesome-icon icon="globe"></font-awesome-icon>
+            <router-link to="/about" class="nav-link">About us</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contact" class="nav-link" href="#">Contact</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/gallery" class="nav-link">Gallery</router-link>
           </li>
         </ul>
+      </div>
+      <div v-if="isSwedish" v-on:click="isSwedish=false" class="d-flex col justify-content-end lang-link">
+        <img class="flag my-auto" src="../assets/sweden.png"><span class="language pl-1"> Svenska</span>
+      </div>
+      <div v-if="!isSwedish" v-on:click="isSwedish=true" class="d-flex col justify-content-end lang-link">
+        <img class="flag my-auto" src="../assets/uk.png"><span class="language pl-1"> English</span>
       </div>
     </nav>
   </div>
 </template>
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  data() {
+    return {
+      isSwedish: true,
+    };
+  }
 };
 </script>
 <style scoped>
@@ -54,7 +75,16 @@ export default {
 #logo_text:hover {
   color: wheat !important;
 }
-.nav-link {
+.nav-link, .language {
   font-family: "Quicksand", sans-serif;
+}
+.flag {
+  height: 3vh;
+}
+.language {
+color: rgba(0,0,0,.5);
+}
+.lang-link:hover {
+  cursor: pointer;
 }
 </style>
