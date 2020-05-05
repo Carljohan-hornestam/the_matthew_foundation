@@ -3,7 +3,9 @@
     <div>
       <Navbar/>
     </div>
+    <div id="main">
     <router-view/>
+    </div>
   </div>
 </template>
 <script>
@@ -16,6 +18,9 @@ export default {
 }
 </script>
 <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,5 +40,12 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#main{
+  background: url(assets/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 </style>
