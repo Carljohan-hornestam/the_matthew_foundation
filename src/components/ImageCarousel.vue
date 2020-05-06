@@ -1,6 +1,6 @@
 <template>
     <div>
-       <div class="h-50">
+       <div class="h-100">
   <b-carousel
     id="carousel-fade"
     style="text-shadow: 0px 0px 2px #000"
@@ -11,15 +11,15 @@
   >
     <b-carousel-slide
       caption="First slide"
-      :img-src="require('../assets/sweden.png')" class="carousel-img"
-    ></b-carousel-slide>
-    <b-carousel-slide
-      caption="Second Slide"
       :img-src="require('../assets/chidera.jpg')" class="carousel-img"
     ></b-carousel-slide>
     <b-carousel-slide
+      caption="Second Slide"
+      :img-src="require('../assets/chimaobi.jpg')" class="carousel-img"
+    ></b-carousel-slide>
+    <b-carousel-slide
       caption="Third Slide"
-      img-src="https://picsum.photos/1024/480/?image=22" class="carousel-img"
+      :img-src="require('../assets/danjuma.jpg')" class="carousel-img"
     ></b-carousel-slide>
   </b-carousel>
 </div> 
@@ -33,7 +33,7 @@ export default {
 </script>
 <style scoped>
 .carousel-img{
-    height: 50vh;
+    height: 75vh;
 }
 
 
