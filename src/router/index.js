@@ -22,6 +22,11 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('../views/Gallery.vue')
   }
 ]
 
