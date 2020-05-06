@@ -1,6 +1,6 @@
 <template>
     <div>
-       <div class="h-100">
+       <div>
   <b-carousel
     id="carousel-fade"
     style="text-shadow: 0px 0px 2px #000"
@@ -11,7 +11,7 @@
   >
     <b-carousel-slide
       caption="First slide"
-      :img-src="require('../assets/chidera.jpg')" class="carousel-img"
+      :img-src="require('../assets/chidera-fixed.jpg')" class="carousel-img"
     ></b-carousel-slide>
     <b-carousel-slide
       caption="Second Slide"
