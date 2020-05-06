@@ -6,9 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { BootstrapVue, IconsPlugin, DropdownPlugin } from 'bootstrap-vue'
+import { BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, FormInputPlugin, FormSelectPlugin,
+  FormCheckboxPlugin, FormDatepickerPlugin, FormGroupPlugin, InputGroupPlugin , ButtonPlugin, 
+  CalendarPlugin } from 'bootstrap-vue'
 
-Vue.use(BootstrapVue, IconsPlugin, DropdownPlugin)
+Vue.use(BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, FormInputPlugin, FormSelectPlugin,
+  FormCheckboxPlugin, FormDatepickerPlugin, FormGroupPlugin, InputGroupPlugin , ButtonPlugin, 
+  CalendarPlugin)
 
 
 library.add(faGlobe);
