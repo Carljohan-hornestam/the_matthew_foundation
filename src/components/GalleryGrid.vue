@@ -3,45 +3,48 @@
     <div class="bg-white pb-3 w-75 p-5" id="shadow">
       <div class="row mb-2">
         <figure class="col grid-height push-up" id="g1">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
         <figure class="col grid-height mx-2 push-up" id="g2">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
         <figure class="col grid-height push-up" id="g3">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
       </div>
       <div class="row mb-2">
         <figure class="col grid-height push-up" id="g4">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
         <figure class="col grid-height mx-2 push-up" id="g5">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
         <figure class="col grid-height push-up" id="g6">
-            <figcaption>
-              <p>Hamburgare</p>
-            </figcaption>
-          </figure>
+          <figcaption>
+            <p>Hamburgare</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
+
 #shadow {
   box-shadow: 3px 3px 3px #565756;
+  font-family: "Quicksand", sans-serif;
 }
 .grid-height {
   height: 35vh;
@@ -53,8 +56,8 @@
   align-items: center;
 }
 .gallery-img {
-    height:100%;
-    width:100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 figure {
@@ -112,7 +115,7 @@ figcaption {
 figcaption p {
   color: white;
   text-align: center;
-  font-size: 120%;
+  font-size: 85%;
 }
 #g1 {
   background-image: url(../assets/chidera.jpg);
