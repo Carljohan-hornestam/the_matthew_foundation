@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import $ from 'jquery'
 import 'bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -12,7 +13,7 @@ import { BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, For
 
 Vue.use(BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, FormInputPlugin, FormSelectPlugin,
   FormCheckboxPlugin, FormDatepickerPlugin, FormGroupPlugin, InputGroupPlugin , ButtonPlugin, 
-  CalendarPlugin)
+  CalendarPlugin, $)
 
 
 library.add(faGlobe);
