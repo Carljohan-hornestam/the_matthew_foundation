@@ -44,10 +44,10 @@
         </ul>
       </div>
       <div v-if="isSwedish" v-on:click="isSwedish=false" class="d-flex col justify-content-end lang-link">
-        <img class="flag my-auto" src="../assets/sweden.png"><span class="language pl-1"> Svenska</span>
+        <span class="language pr-1"> Svenska</span><img class="flag my-auto" src="../assets/sweden.png">
       </div>
       <div v-if="!isSwedish" v-on:click="isSwedish=true" class="d-flex col justify-content-end lang-link">
-        <img class="flag my-auto" src="../assets/uk.png"><span class="language pl-1"> English</span>
+        <span class="language pr-1"> English</span><img class="flag my-auto" src="../assets/uk.png">
       </div>
     </nav>
   </div>
