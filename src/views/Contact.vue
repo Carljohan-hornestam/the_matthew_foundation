@@ -47,23 +47,22 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&family=Noto+Sans&display=swap");
 
+
 #shadow {
   box-shadow: 3px 3px 3px #565756;
 }
-#contact_info{
-  font-family: 'Noto Sans', sans-serif;
+#contact_info {
+  font-family: "Noto Sans", sans-serif;
 }
 #donate_info {
   padding-left: 10em;
   border-left: 2px solid #d6930d;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
-#donateinfo_text{
+#donateinfo_text {
   font-family: "Quicksand", sans-serif;
-
 }
-#contactinfo_text{
+#contactinfo_text {
   font-family: "Quicksand", sans-serif;
-
 }
 </style>

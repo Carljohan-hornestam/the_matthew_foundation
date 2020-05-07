@@ -36,31 +36,42 @@
             <router-link to="/about" class="nav-link">About us</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/contact" class="nav-link" href="#">Contact</router-link>
+            <router-link to="/contact" class="nav-link">Contact</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/gallery" class="nav-link">Gallery</router-link>
           </li>
         </ul>
       </div>
-      <div v-if="isSwedish" v-on:click="isSwedish=false" class="d-flex col justify-content-end lang-link">
-        <span class="language pr-1"> Svenska</span><img class="flag my-auto" src="../assets/sweden.png">
+      <div
+        v-if="isSwedish"
+        v-on:click="isSwedish=false"
+        class="d-flex col justify-content-end lang-link"
+      >
+        <span class="language pr-1">Svenska</span>
+        <img class="flag my-auto" src="../assets/sweden.png" />
       </div>
-      <div v-if="!isSwedish" v-on:click="isSwedish=true" class="d-flex col justify-content-end lang-link">
-        <span class="language pr-1"> English</span><img class="flag my-auto" src="../assets/uk.png">
+      <div
+        v-if="!isSwedish"
+        v-on:click="isSwedish=true"
+        class="d-flex col justify-content-end lang-link"
+      >
+        <span class="language pr-1">English</span>
+        <img class="flag my-auto" src="../assets/uk.png" />
       </div>
     </nav>
   </div>
 </template>
 <script>
+//import $ from 'jquery'
 export default {
   name: "Navbar",
   data() {
     return {
-      isSwedish: true,
+      isSwedish: true
     };
+  },
   }
-};
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
@@ -75,14 +86,18 @@ export default {
 #logo_text:hover {
   color: wheat !important;
 }
-.nav-link, .language {
+.nav-link,
+.language {
   font-family: "Quicksand", sans-serif;
+}
+.active-link{
+  color: wheat !important;
 }
 .flag {
   height: 3vh;
 }
 .language {
-color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .lang-link:hover {
   cursor: pointer;
