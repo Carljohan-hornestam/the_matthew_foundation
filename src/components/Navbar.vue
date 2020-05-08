@@ -17,7 +17,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div v-if="isSwedish" class="d-flex col-auto justify-content-end">
+      <div v-if="this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/about" class="nav-link">Om oss</router-link>
@@ -30,7 +30,7 @@
           </li>
         </ul>
       </div>
-      <div v-if="!isSwedish" class="d-flex col-auto justify-content-end">
+      <div v-if="!this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/about" class="nav-link">About us</router-link>
@@ -44,16 +44,16 @@
         </ul>
       </div>
       <div
-        v-if="isSwedish"
-        v-on:click="isSwedish=false"
+        v-if="this.$store.state.isSwedish"
+        v-on:click="changeLanguage(false)"
         class="d-flex col justify-content-end lang-link"
       >
         <span class="language pr-1">Svenska</span>
         <img class="flag my-auto" src="../assets/sweden.png" />
       </div>
       <div
-        v-if="!isSwedish"
-        v-on:click="isSwedish=true"
+        v-if="!this.$store.state.isSwedish"
+        v-on:click="changeLanguage(true)"
         class="d-flex col justify-content-end lang-link"
       >
         <span class="language pr-1">English</span>
@@ -66,12 +66,13 @@
 //import $ from 'jquery'
 export default {
   name: "Navbar",
-  data() {
-    return {
-      isSwedish: true
-    };
-  },
+
+  methods:{
+    changeLanguage(choice){
+      this.$store.commit('setIsSwedish', choice)
+    }
   }
+    }
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");

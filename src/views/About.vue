@@ -2,9 +2,12 @@
   <div class="container pt-5 d-flex justify-content-center" id="about_container">
     <div class="row bg-white py-3 pb-3 w-100 mb-4" id="shadow">
       <div class="col-2 text-left pl-4 pt-4" id="about_nav">
-        <ul style="list-style: none; padding: 0;">
+        <ul style="list-style: none; padding: 0;" v-if="this.$store.state.isSwedish">
           <li class="mb-2 infolink" @click="isStatutes = false">Vilka är vi?</li>
           <li class="mb-2 infolink" @click="isStatutes = true">Stadgar</li>
+        </ul><ul style="list-style: none; padding: 0;" v-if="!this.$store.state.isSwedish">
+          <li class="mb-2 infolink" @click="isStatutes = false">Who are we?</li>
+          <li class="mb-2 infolink" @click="isStatutes = true">Statutes</li>
         </ul>
       </div>
       <div id="about_info" class="col-9 text-left pt-4 pl-4" v-if="!isStatutes" >
