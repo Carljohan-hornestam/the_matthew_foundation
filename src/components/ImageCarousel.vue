@@ -80,6 +80,7 @@ h2 {
 .carousel-caption {
   left: 0 !important;
   right:0 !important;
+  bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
