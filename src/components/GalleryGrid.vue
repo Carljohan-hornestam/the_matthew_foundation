@@ -35,6 +35,23 @@
           </figcaption>
         </figure>
       </div>
+      <div class="row mb-2">
+        <figure class="col grid-height push-up" id="g7">
+          <figcaption>
+            <p>Obi tvillingarna, Jane och Joy</p>
+          </figcaption>
+        </figure>
+        <figure class="col grid-height mx-2 push-up" id="g8">
+          <figcaption>
+            <p>Favour</p>
+          </figcaption>
+        </figure>
+        <figure class="col grid-height push-up" id="g9">
+          <figcaption>
+            <p>Jane</p>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </template>
@@ -134,5 +151,14 @@ figcaption p {
 }
 #g6 {
   background-image: url(../assets/nnamdi.jpg);
+}
+#g7 {
+  background-image: url(../assets/obi-twins.jpg);
+}
+#g8 {
+  background-image: url(../assets/favour.jpg);
+}
+#g9 {
+  background-image: url(../assets/jane.jpg);
 }
 </style>
