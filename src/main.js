@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
+import $ from 'jquery'
 import 'bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -12,7 +14,7 @@ import { BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, For
 
 Vue.use(BootstrapVue, IconsPlugin, DropdownPlugin, TablePlugin, FormPlugin, FormInputPlugin, FormSelectPlugin,
   FormCheckboxPlugin, FormDatepickerPlugin, FormGroupPlugin, InputGroupPlugin , ButtonPlugin, 
-  CalendarPlugin)
+  CalendarPlugin, $)
 
 
 library.add(faGlobe);
@@ -22,6 +24,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false
 
 new Vue({
-  router,
+  router, store,
   render: h => h(App)
 }).$mount('#app')

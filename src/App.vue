@@ -43,8 +43,8 @@ export default {
 }
 
 #main{
-  background: url(assets/bg.jpg);
-  height: 100vh;
+  background: url(assets/bg.jpg) no-repeat center center fixed;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
 }

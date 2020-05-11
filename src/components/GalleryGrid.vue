@@ -113,8 +113,11 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
+
 #shadow {
   box-shadow: 3px 3px 3px #565756;
+  font-family: "Quicksand", sans-serif;
 }
 .grid-height {
   height: 35vh;
@@ -126,8 +129,8 @@ export default {
   align-items: center;
 }
 .gallery-img {
-    height:100%;
-    width:100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 figure {
@@ -185,7 +188,7 @@ figcaption {
 figcaption p {
   color: white;
   text-align: center;
-  font-size: 120%;
+  font-size: 85%;
 }
 .custom-link {
   border-radius: 5px;
@@ -263,5 +266,14 @@ figcaption p {
 }
 #g6 {
   background-image: url(../assets/nnamdi.jpg);
+}
+#g7 {
+  background-image: url(../assets/obi-twins.jpg);
+}
+#g8 {
+  background-image: url(../assets/favour.jpg);
+}
+#g9 {
+  background-image: url(../assets/jane.jpg);
 }
 </style>

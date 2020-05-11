@@ -66,17 +66,50 @@
         </a>
       </div>
     </div>
+  </div>
 </template>
 <script>
-
 export default {
-    name: 'ImageCarousel',
-}
+  name: "ImageCarousel"
+};
 </script>
 <style scoped>
-.carousel-img{
-    height: 75vh;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&family=Noto+Sans&display=swap");
+
+.carousel-img {
+  height: 75vh;
 }
-
-
+.lead {
+  background-color: #d6930d;
+  font-family: "Noto Sans", sans-serif;
+  width: inherit;
+  margin: 0 !important;
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+.carousel-item {
+  height: 80vh;
+  max-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.img1 {
+  background-image: url(../assets/c4.jpg);
+}
+.img2 {
+  background-image: url(../assets/c2.jpg);
+}
+.img3 {
+  background-image: url(../assets/cynthia.jpg);
+}
+.carousel-caption {
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 </style>
