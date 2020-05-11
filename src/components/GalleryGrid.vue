@@ -4,34 +4,34 @@
       <div class="row mb-2">
         <figure class="col grid-height push-up" id="g1">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Chidera</p>
           </figcaption>
         </figure>
         <figure class="col grid-height mx-2 push-up" id="g2">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Chimaobi</p>
           </figcaption>
         </figure>
         <figure class="col grid-height push-up" id="g3">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Cynthia</p>
           </figcaption>
         </figure>
       </div>
       <div class="row mb-2">
         <figure class="col grid-height push-up" id="g4">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Danjuma</p>
           </figcaption>
         </figure>
         <figure class="col grid-height mx-2 push-up" id="g5">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Chinasa</p>
           </figcaption>
         </figure>
         <figure class="col grid-height push-up" id="g6">
           <figcaption>
-            <p>Hamburgare</p>
+            <p>Nnamdi</p>
           </figcaption>
         </figure>
       </div>

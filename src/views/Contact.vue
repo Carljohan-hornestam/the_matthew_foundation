@@ -7,9 +7,7 @@
           <li class="mb-2 mt-4">
             <strong>Matthew Foundation</strong>
           </li>
-          <li class="mb-2">XXXX-XX-XX-XX</li>
-          <li class="mb-2">Adress-placeholder</li>
-          <li class="mb-2">Email-placeholder</li>
+          <li class="mb-2">Email</li>
         </ul>
       </div>
       <div class="col text-left pl-5 pt-4" id="donate_info">
@@ -18,9 +16,7 @@
           <li class="mb-2 mt-4">
             <strong>Matthew Foundation</strong>
           </li>
-          <li class="mb-2">XXXX-XX-XX-XX</li>
-          <li class="mb-2">Adress-placeholder</li>
-          <li class="mb-2">Email-placeholder</li>
+          <li class="mb-2">Bankgiro: 5373-5015</li>
         </ul>
       </div>
     </div>

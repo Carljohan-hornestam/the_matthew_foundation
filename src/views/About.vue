@@ -5,7 +5,8 @@
         <ul style="list-style: none; padding: 0;" v-if="this.$store.state.isSwedish">
           <li class="mb-2 infolink" @click="isStatutes = false">Vilka är vi?</li>
           <li class="mb-2 infolink" @click="isStatutes = true">Stadgar</li>
-        </ul><ul style="list-style: none; padding: 0;" v-if="!this.$store.state.isSwedish">
+        </ul>
+        <ul style="list-style: none; padding: 0;" v-if="!this.$store.state.isSwedish">
           <li class="mb-2 infolink" @click="isStatutes = false">Who are we?</li>
           <li class="mb-2 infolink" @click="isStatutes = true">Statutes</li>
         </ul>
@@ -14,19 +15,25 @@
       <AboutUsInfo/>
       </div>
       <div id="about_info" class="col-9 text-left pt-4 pl-4" v-if="isStatutes">
-      <Statutes />
+        <div v-if="this.$store.state.isSwedish">
+      <Statutes_swe/>
+        </div>
+      <div v-if="!this.$store.state.isSwedish">
+      <Statutes_eng />
+      </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import AboutUsInfo from '@/components/AboutUsInfo.vue';
-import Statutes from '@/components/Statutes.vue';
+import Statutes_swe from '@/components/Statutes_swe.vue';
+import Statutes_eng from '@/components/Statutes_eng.vue'
 
 export default {
   name: 'About',
   components: {
-    AboutUsInfo, Statutes,
+    AboutUsInfo, Statutes_swe, Statutes_eng,
 },
 data() {
     return {
