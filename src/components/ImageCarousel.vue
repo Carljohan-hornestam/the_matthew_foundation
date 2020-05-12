@@ -10,11 +10,11 @@
               <p
                 class="lead"
                 v-if="this.$store.state.isSwedish"
-              >Fått kapitalstöd för att kunna avsluta sin utbildning. Läser internationella relationer.</p>
+              >Nnamdi har fått kapitalstöd för att kunna avsluta sin utbildning. Han läser i nuläget internationella relationer.</p>
               <p
                 class="lead"
                 v-if="!this.$store.state.isSwedish"
-              >Recieved economic support in order to finish his education. He is currently studying international relations.</p>
+              >Nnamdi has recieved economic support in order to finish his education. He is currently studying international relations.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -24,11 +24,11 @@
               <p
                 class="lead"
                 v-if="this.$store.state.isSwedish"
-              >Pojken har kämpat mot bland annat hjärtproblem sen födseln. Fått vårdstöd.</p>
+              >Den här lilla pojken har kämpat mot bland annat hjärtproblem sen födseln. Han har fått vårdstöd.</p>
               <p
                 class="lead"
                 v-if="!this.$store.state.isSwedish"
-              >The boy has been fighting heart condition since he was born. Been given economic support for healthcare.</p>
+              >This little boy has been fighting heart condition since he was born. He has been given economic support for healthcare.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -38,11 +38,11 @@
               <p
                 class="lead"
                 v-if="this.$store.state.isSwedish"
-              >Fått kapitalstöd för att kunna avsluta sin utbildning. Hon läser filosofi.</p>
+              >Cynthia har fått kapitalstöd för att kunna avsluta sin utbildning. Hon läser i nuläget filosofi.</p>
               <p
                 class="lead"
                 v-if="!this.$store.state.isSwedish"
-              >Recieved economic support in order to finish her education. She is currently studying philosophy.</p>
+              >Cynthia has recieved economic support in order to finish her education. She is currently studying philosophy.</p>
             </div>
           </div>
         </div>
