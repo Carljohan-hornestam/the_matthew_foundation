@@ -1,10 +1,11 @@
 <template>
   <div class="container pt-5 d-flex justify-content-center" id="contact_form">
     <div class="bg-white pb-3 w-75" id="shadow" >
-      <b-form @reset="onReset" class= "px-5" action="mailto:miniharald@gmail.com" method="post" enctype="text/plain">
+      <b-form @reset="onReset" class= "px-5"  action="mailto:miniharald@gmail.com">
         <b-form-group
           class="pt-3 pb-4 text-left"
           id="input-group-2"
+          name="name"
           label="Namn"
           label-for="input-2"
         >
@@ -13,6 +14,7 @@
         <b-form-group class="text-left pb-4" id="input-group-1" label="Email" label-for="input-1">
           <b-form-input
             id="input-1"
+            name="email"
             v-model="form.email"
             type="email"
             required
@@ -28,6 +30,7 @@
         >
           <b-form-textarea
             id="textarea"
+            name="msg"
             v-model="form.message"
             placeholder="Skriv ditt meddelande:"
             rows="8"
@@ -56,11 +59,6 @@ export default {
     };
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      window.open('mailto:miniharald@gmail.com?subject=this.form.name&body=this.form.message')
-      alert(JSON.stringify(this.form));
-    },
     onReset(evt) {
       evt.preventDefault();
       this.form.email = "";

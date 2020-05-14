@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="container pt-5 d-flex justify-content-center" id="contact_form">
     <div class="row bg-white py-3 pb-3 w-75" id="shadow">
       <div class="col text-left pl-4 pt-4" id="contact_info">
@@ -21,20 +22,21 @@
       </div>
     </div>
   </div>
+          <ContactForm />
+</div>
 </template>
 
 
 
 <script>
-//import ContactForm from '@/components/ContactForm.vue';
+import ContactForm from '@/components/ContactForm.vue';
 export default {
-  /*name: 'Contact',
+  name: 'Contact',
   components: {
     ContactForm,
   
   
-}
-*/
+},
   data() {
     return {};
   }
