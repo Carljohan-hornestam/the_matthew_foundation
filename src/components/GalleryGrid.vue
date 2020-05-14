@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-5 d-flex justify-content-center">
+  <div class="container pt-5 d-flex justify-content-center pb-5">
     <div class="bg-white pb-3 w-75 p-5" id="shadow">
       <div class="row mb-2">
         <figure class="col grid-height push-up custom-link" id="g1" v-on:click="showModal('img1')">

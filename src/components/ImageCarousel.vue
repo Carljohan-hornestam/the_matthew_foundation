@@ -6,15 +6,15 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active img1">
             <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Nnamdi</h2>
+              <h2 class="display-4">Jane och Joy</h2>
               <p
                 class="lead"
                 v-if="this.$store.state.isSwedish"
-              >Nnamdi har fått kapitalstöd för att kunna avsluta sin utbildning. Han läser i nuläget internationella relationer.</p>
+              >Tvillingarna är barn till en målare, som har varit arbetslös i flera år pga att han har tagit hand om sin sjuka mamma. Familjen har fått hjälp för att kunna återhämta sig.</p>
               <p
                 class="lead"
                 v-if="!this.$store.state.isSwedish"
-              >Nnamdi has recieved economic support in order to finish his education. He is currently studying international relations.</p>
+              >The twin's father is a painter, who has been unemployed for several years due to him taking care of his ill mother. The family has been helped, in order to recover. </p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -34,15 +34,15 @@
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item img3">
             <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Cynthia</h2>
+              <h2 class="display-4">Chimaobi</h2>
               <p
                 class="lead"
                 v-if="this.$store.state.isSwedish"
-              >Cynthia har fått kapitalstöd för att kunna avsluta sin utbildning. Hon läser i nuläget filosofi.</p>
+              >Chimaobi lider av en mental sjukdom. Hennes mamma är änka, hon har inte råd att betala för den hjälp sin dotter behöver. De har fått hjälp för att kunna betala för vård.</p>
               <p
                 class="lead"
                 v-if="!this.$store.state.isSwedish"
-              >Cynthia has recieved economic support in order to finish her education. She is currently studying philosophy.</p>
+              >Chimaobi suffers from a mental illness. Her mother is a widow, she can't afford to pay for the care her daughter needs. They have been aided, in order to pay for healthcare.</p>
             </div>
           </div>
         </div>
@@ -76,9 +76,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&family=Noto+Sans&display=swap");
 
-.carousel-img {
-  height: 75vh;
-}
 .lead {
   background-color: #d6930d;
   font-family: "Noto Sans", sans-serif;
@@ -90,7 +87,7 @@ h2 {
 }
 .carousel-item {
   height: 80vh;
-  max-height: 350px;
+  max-height: 450px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -98,13 +95,13 @@ h2 {
   background-size: cover;
 }
 .img1 {
-  background-image: url(../assets/c4.jpg);
+  background-image: url(../assets/twins_carousel.jpg);
 }
 .img2 {
   background-image: url(../assets/c2.jpg);
 }
 .img3 {
-  background-image: url(../assets/cynthia.jpg);
+  background-image: url(../assets/chimaobi_carousel.jpg);
 }
 .carousel-caption {
   left: 0 !important;

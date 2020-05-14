@@ -4,7 +4,7 @@
     <h4 v-if="!this.$store.state.isSwedish">Who are we?</h4>
 
     <div class="row about justify-content-start pt-4 pl-3">
-      <img src="../assets/hej.jpg" />
+      <img src="../assets/family.jpg" />
     </div>
 
     <div v-if="this.$store.state.isSwedish">
