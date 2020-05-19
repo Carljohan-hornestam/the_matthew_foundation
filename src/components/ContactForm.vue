@@ -43,7 +43,7 @@
           <b-button id="confirm_btn" class="ml-2" type="submit">Skicka</b-button>
         </div>
       </b-form>
-      <b-form class= "px-5" @reset="onReset" @submit="onSubmit" v-if="!this.$store.state.isSwedish">
+      <b-form class= "px-5" @reset="onReset" action="contactaction.php" v-if="!this.$store.state.isSwedish">
         <b-form-group
           class="pt-3 pb-4 text-left"
           id="input-group-2"

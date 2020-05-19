@@ -1,0 +1,338 @@
+/*
+Theme Name: TMF
+Author: Carl-Johan & Alex
+Description: Theme for TMF.
+Version: 1.0
+Text Domain: tmf
+Tags: vue, africa
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+#main{
+  background: url(assets/bg.jpg) no-repeat center center fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#shadow {
+    box-shadow: 3px 3px 3px #565756;
+    font-family: "Quicksand", sans-serif;
+}
+
+#about_info {
+    padding-left: 10em;
+    border-left: 2px solid #d6930d;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.infolink:hover{
+    cursor: pointer;
+}
+
+#about_nav, h4 {
+    font-family: "Quicksand", sans-serif;
+}
+
+#contact_info {
+    font-family: "Noto Sans", sans-serif;
+  }
+
+#donate_info {
+    padding-left: 10em;
+    border-left: 2px solid #d6930d;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#donateinfo_text {
+    font-family: "Quicksand", sans-serif;
+}
+
+#contactinfo_text {
+    font-family: "Quicksand", sans-serif;
+}
+
+a {
+    color: #d6930d !important;
+  }
+
+.about img {
+    width: 30vw;
+  }
+
+#contact_form {
+    font-family: "Quicksand", sans-serif;
+}
+
+#shadow{
+    box-shadow: 3px 3px 3px #565756;
+}
+
+#reset_btn {
+    background-color: #8a1216;
+}
+
+#confirm_btn {
+    background-color: #138032;
+}
+
+.grid-height {
+    height: 35vh;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .gallery-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background: #d6930d;
+    padding: 0.5vw;
+    z-index: 100;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    left: 0;
+    -moz-transform: translate3d(-100%, -50%, 0);
+    -webkit-transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-100%, -50%, 0);
+    opacity: 0;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .push-up img {
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .push-up figcaption {
+    top: 100%;
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .push-up:hover figcaption {
+    -moz-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    box-shadow: 0px -2px 28px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+  }
+  figcaption p {
+    color: white;
+    text-align: center;
+    font-size: 85%;
+  }
+  .custom-link {
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: 0.3s;*/
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  #modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #g1 {
+    background-image: url(../assets/chidera.jpg);
+  }
+  #g2 {
+    background-image: url(../assets/chimaobi.jpg);
+  }
+  #g3 {
+    background-image: url(../assets/cynthia.jpg);
+  }
+  #g4 {
+    background-image: url(../assets/danjuma.jpg);
+  }
+  #g5 {
+    background-image: url(../assets/Handover.jpg);
+  }
+  #g6 {
+    background-image: url(../assets/nnamdi.jpg);
+  }
+  #g7 {
+    background-image: url(../assets/obi_twins.jpg);
+  }
+  #g8 {
+    background-image: url(../assets/favour.jpg);
+  }
+  #g9 {
+    background-image: url(../assets/jane.jpg);
+  }
+
+  .lead {
+    background-color: #d6930d;
+    font-family: "Noto Sans", sans-serif;
+    width: inherit;
+    margin: 0 !important;
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+  }
+  .carousel-item {
+    height: 80vh;
+    max-height: 450px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .img1 {
+    background-image: url(../assets/twins_carousel.jpg);
+  }
+  .img2 {
+    background-image: url(../assets/c2.jpg);
+  }
+  .img3 {
+    background-image: url(../assets/chimaobi_carousel.jpg);
+  }
+  .carousel-caption {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  #logo_text {
+    font-family: "Caveat", cursive;
+  }
+
+#tmfNav {
+    background-color: #d6930d !important;
+}
+
+.nav-link:hover, #logo_text:hover {
+    color: wheat !important;
+}
+
+.nav-link, .language {
+    font-family: "Quicksand", sans-serif;
+}
+
+  .active-link{
+    color: wheat !important;
+  }
+
+  .flag {
+    height: 3vh;
+  }
+
+  .language {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .lang-link:hover {
+    cursor: pointer;
+  }
+
+  .statutes {
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  #about_nav,
+  h3,
+  h5 {
+    font-family: "Quicksand", sans-serif;
+  }

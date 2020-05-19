@@ -1,20 +1,43 @@
 <?php
 
-$name = "Undefined name";
-
-if(isset($_POST['name'])){
-    $name = $_POST['name'];
+$errors = '';
+$myemail = 'admin@matthewfoundation.se';//<-----Put Your email address here.
+if(empty($_POST['name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
 }
 
-$message = "<p>Hi!</p>";
-$message .= "<p>Wazaaaaa $name</p>";
+$name = $_POST['name']; 
+$email_address = $_POST['email']; 
+$message = $_POST['message']; 
 
-$to_email = 'miniharald@gmail.com';
-$subject = 'Mail subject';
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=UTF-8';
-$headers[] = 'From: Biloo <noreply@ydomain.com>';
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
 
-mail($to_email, $subject, $message, implode("\r\n", $headers));
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = "$name har skickat ett meddelande från formuläret";
+
+$email_body = "$message" .
+"\n__________________________________________________" .
+"\nSvara på: $email_address";
+
+$headers = "From: $myemail\n";
+
+$headers .= "Reply-To: $email_address";
+
+mail($to,$email_subject,$email_body,$headers);
+
+}
 
 ?>
