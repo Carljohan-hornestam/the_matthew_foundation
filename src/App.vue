@@ -17,8 +17,11 @@ export default {
   }
 }
 </script>
-<style>
 
+<style>
+/*@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-vue/src/index.scss';
+*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
 
 #app {

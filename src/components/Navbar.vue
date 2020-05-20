@@ -6,7 +6,24 @@
           <h3>The Matthew Foundation</h3>
         </router-link>
       </div>
-      <button
+      <b-dropdown dropleft variant="link" class="test" toggle-class="text-decoration-none" no-caret>
+        <template v-slot:button-content>
+          <span class="navbar-toggler-icon"></span>
+        </template>
+
+        <div>
+          <b-dropdown-item>
+            <router-link to="/about" class="nav-link">Om oss</router-link>
+          </b-dropdown-item>
+          <b-dropdown-item>
+            <router-link to="/contact" class="nav-link">Kontakta oss</router-link>
+          </b-dropdown-item>
+          <b-dropdown-item>
+            <router-link to="/gallery" class="nav-link">Galleri</router-link>
+          </b-dropdown-item>
+        </div>
+      </b-dropdown>
+      <!--<button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -17,47 +34,53 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div v-if="this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link to="/about" class="nav-link">Om oss</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/contact" class="nav-link" href="#">Kontakt</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/gallery" class="nav-link">Galleri</router-link>
-          </li>
-        </ul>
+      -->
+      <div class="d-none d-lg-block col-auto">
+        <div v-if="this.$store.state.isSwedish" class="d-flex justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link">Om oss</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/contact" class="nav-link" href="#">Kontakt</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/gallery" class="nav-link">Galleri</router-link>
+            </li>
+          </ul>
+        </div>
+
+        <div v-if="!this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link">About us</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/contact" class="nav-link">Contact</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/gallery" class="nav-link">Gallery</router-link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div v-if="!this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link to="/about" class="nav-link">About us</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/contact" class="nav-link">Contact</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/gallery" class="nav-link">Gallery</router-link>
-          </li>
-        </ul>
-      </div>
-      <div
-        v-if="this.$store.state.isSwedish"
-        v-on:click="changeLanguage(false)"
-        class="d-flex col justify-content-end lang-link"
-      >
-        <span class="language pr-1">Svenska</span>
-        <img class="flag my-auto" src="../assets/sweden.png" />
-      </div>
-      <div
-        v-if="!this.$store.state.isSwedish"
-        v-on:click="changeLanguage(true)"
-        class="d-flex col justify-content-end lang-link"
-      >
-        <span class="language pr-1">English</span>
-        <img class="flag my-auto" src="../assets/uk.png" />
+      <div class="d-none d-sm-block col">
+        <div
+          v-if="this.$store.state.isSwedish"
+          v-on:click="changeLanguage(false)"
+          class="d-flex justify-content-end lang-link"
+        >
+          <span class="language pr-1">Svenska</span>
+          <img class="flag my-auto" src="../assets/sweden.png" />
+        </div>
+        <div
+          v-if="!this.$store.state.isSwedish"
+          v-on:click="changeLanguage(true)"
+          class="d-flex col justify-content-end lang-link"
+        >
+          <span class="language pr-1">English</span>
+          <img class="flag my-auto" src="../assets/uk.png" />
+        </div>
       </div>
     </nav>
   </div>
@@ -67,12 +90,12 @@
 export default {
   name: "Navbar",
 
-  methods:{
-    changeLanguage(choice){
-      this.$store.commit('setIsSwedish', choice)
+  methods: {
+    changeLanguage(choice) {
+      this.$store.commit("setIsSwedish", choice);
     }
   }
-    }
+};
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap");
@@ -91,7 +114,7 @@ export default {
 .language {
   font-family: "Quicksand", sans-serif;
 }
-.active-link{
+.active-link {
   color: wheat !important;
 }
 .flag {
@@ -102,5 +125,8 @@ export default {
 }
 .lang-link:hover {
   cursor: pointer;
+}
+ .test .dropdown-toggle::after {
+  display: none !important;
 }
 </style>
