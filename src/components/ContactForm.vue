@@ -92,7 +92,7 @@
             id="textarea"
             name="msg"
             v-model="form.message"
-            :state="this.form.message.length < 500 && this.form.message > 10"
+            :state="this.form.message.length < 500 && this.form.message.length > 10"
             placeholder="Enter your message"
             rows="8"
             max-rows="8"
