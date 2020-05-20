@@ -49,14 +49,14 @@
           <img
             id="img3"
             src="../assets/cynthia.jpg"
-            alt="Cynthia studerar filosofi vid universitetet i Imo området. Hon förlorade sin mamma 2008 till en underlig sjukdom. Sjukdomen upptäcktes och diagnostiserades aldrig. 2010 förlorade hon även sin pappa till levercirros. Hon har fått hjälp för att kunna avsluta sina studier."
+            alt="Cynthia studerar filosofi vid universitetet i Imo området. Hon förlorade sin mamma 2008 till en okänd sjukdom. Sjukdomen upptäcktes och diagnostiserades aldrig. 2010 förlorade hon även sin pappa till levercirros. Hon har fått hjälp för att kunna avsluta sina studier."
             style="display:none;"
             v-if="this.$store.state.isSwedish"
           />
           <img
             id="img3"
             src="../assets/cynthia.jpg"
-            alt="Cynthia is studying philosophy at the University of Imo state. She lost her mother in 2008 to a mysterious illness. The illness was never detected nor diagnosed. In 2010, she tragically also lost her father to liver cirrhosis. She has been financially aided to finish her studies."
+            alt="Cynthia is studying philosophy at the University of Imo state. She lost her mother in 2008 to an unknown illness. The illness was never detected nor diagnosed. In 2010, she tragically also lost her father to liver cirrhosis. She has been financially aided to finish her studies."
             style="display:none;"
             v-if="!this.$store.state.isSwedish"
           />
