@@ -64,4 +64,29 @@ h4 {
 .about img {
   width: 30vw;
 }
+
+@media (max-width: 400px) {
+.about img {
+  width: 60vw;
+  height: 30vh;
+}
+}
+@media (min-width: 400px) and (max-width: 700px) {
+.about img {
+  width: 50vw;
+  height: 50vh;
+}
+}
+@media (min-width: 700px) and (max-width: 800px) {
+.about img {
+  width: 60vw;
+  height: 30vh;
+}
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+.about img {
+  width: 60vw;
+  height: 50vh;
+}
+}
 </style>

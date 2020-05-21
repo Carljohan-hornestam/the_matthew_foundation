@@ -6,20 +6,20 @@
           <h3>The Matthew Foundation</h3>
         </router-link>
       </div>
-      <b-dropdown dropleft variant="link" class="test" toggle-class="text-decoration-none" no-caret>
+      <b-dropdown dropleft variant="link" class="d-block d-lg-none" toggle-class="text-decoration-none" no-caret>
         <template v-slot:button-content>
           <span class="navbar-toggler-icon"></span>
         </template>
 
-        <div>
+        <div class="nav-bg">
           <b-dropdown-item>
-            <router-link to="/about" class="nav-link">Om oss</router-link>
+            <router-link to="/about" class="language">Om oss</router-link>
           </b-dropdown-item>
           <b-dropdown-item>
-            <router-link to="/contact" class="nav-link">Kontakta oss</router-link>
+            <router-link to="/contact" class="language">Kontakta oss</router-link>
           </b-dropdown-item>
           <b-dropdown-item>
-            <router-link to="/gallery" class="nav-link">Galleri</router-link>
+            <router-link to="/gallery" class="language">Galleri</router-link>
           </b-dropdown-item>
         </div>
       </b-dropdown>
@@ -103,7 +103,7 @@ export default {
 #logo_text {
   font-family: "Caveat", cursive;
 }
-#tmfNav {
+#tmfNav, .nav-bg, ul.dropdown-menu {
   background-color: #d6930d !important;
 }
 .nav-link:hover,
@@ -126,7 +126,14 @@ export default {
 .lang-link:hover {
   cursor: pointer;
 }
- .test .dropdown-toggle::after {
-  display: none !important;
+.dropdown-menu {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+.dropdown-menu > li:first-child {
+   margin-top: 15px;
+}
+.dropdown-menu > li:last-child {
+   margin-bottom: 15px;
 }
 </style>
