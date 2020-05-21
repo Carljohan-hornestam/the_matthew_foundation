@@ -65,25 +65,37 @@ h4 {
   width: 30vw;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 .about img {
-  width: 60vw;
+  width: 70vw;
   height: 30vh;
 }
 }
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 420px) and (max-width: 700px) {
 .about img {
   width: 50vw;
   height: 50vh;
 }
 }
-@media (min-width: 700px) and (max-width: 800px) {
+@media (min-width: 700px) and (max-width: 750px) {
+.about img {
+  width: 45vw;
+  height: 45vh;
+}
+}
+@media (min-width: 750px) and (max-width: 800px) {
 .about img {
   width: 60vw;
-  height: 30vh;
+  height: 35vh;
 }
 }
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 900px) {
+.about img {
+  width: 55vw;
+  height: 65vh;
+}
+}
+@media (min-width: 900px) and (max-width: 1200px) {
 .about img {
   width: 60vw;
   height: 50vh;
