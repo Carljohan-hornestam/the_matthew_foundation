@@ -16,7 +16,10 @@
             </li>
           </ul>
         </div>
-        <div class="col text-left pl-5 pt-4" id="donate_info">
+        <div class="w-100 col-md-auto order-md-last">
+          <hr class="d-block d-md-none mx-2" />
+        </div>
+        <div class="col text-left pl-4 pl-sm-5 pt-4" id="donate_info">
           <h4 id="donateinfo_text" v-if="this.$store.state.isSwedish">Hur du donerar</h4>
           <h4 id="donateinfo_text" v-if="!this.$store.state.isSwedish">How to donate</h4>
           <ul style="list-style: none; padding: 0;">
@@ -68,5 +71,32 @@ export default {
 }
 a {
   color: #d6930d !important;
+}
+hr {
+  background-color: #d6930d;
+  height: 2px;
+}
+@media (max-width: 600px) {
+  #donate_info {
+    border-left: none;
+    text-align: left;
+  }
+  #contactinfo_text {
+    font-size: 20px;
+  }
+  #donateinfo_text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 750px) {
+  #donate_info {
+    border-left: none;
+    text-align: left;
+  }
+}
+@media (max-width: 820px) {
+  #donate_info {
+    padding-left: 20px !important;
+  }
 }
 </style>
