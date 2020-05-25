@@ -47,6 +47,9 @@
             <li class="nav-item">
               <router-link to="/gallery" class="nav-link">Galleri</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/projects" class="nav-link">Projekt</router-link>
+            </li>
           </ul>
         </div>
 
@@ -60,6 +63,9 @@
             </li>
             <li class="nav-item">
               <router-link to="/gallery" class="nav-link">Gallery</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/projects" class="nav-link">Current projects</router-link>
             </li>
           </ul>
         </div>
