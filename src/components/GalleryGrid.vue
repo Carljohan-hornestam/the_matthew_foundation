@@ -147,7 +147,8 @@
             v-if="!this.$store.state.isSwedish"
           />
           <figcaption>
-            <p>Obi tvillingarna, Jane och Joy</p>
+            <p v-if="this.$store.state.isSwedish">Obi tvillingarna, Jane och Joy</p>
+            <p v-if="!this.$store.state.isSwedish"> The Obi twins, Jane and Joy </p>
           </figcaption>
         </figure>
         <figure
