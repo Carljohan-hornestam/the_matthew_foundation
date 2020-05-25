@@ -2,7 +2,7 @@
   <div class="container pt-5 d-flex justify-content-center pb-5">
     <div class="bg-white pb-3 w-75 p-5" id="shadow">
       <div class="row mb-2">
-        <figure class="col grid-height push-up custom-link" id="g1" v-on:click="showModal('img1')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link mb-2 mb-sm-0" id="g1" v-on:click="showModal('img1')">
           <img
             id="img1"
             src="../assets/chidera.jpg"
@@ -22,7 +22,7 @@
           </figcaption>
         </figure>
         <figure
-          class="col grid-height mx-2 push-up custom-link"
+          class="col-12 col-sm-auto grid-height mx-0 mx-sm-2 mb-2 mb-sm-0 push-up custom-link"
           id="g2"
           v-on:click="showModal('img2')"
         >
@@ -45,7 +45,7 @@
             <p>Chimaobi</p>
           </figcaption>
         </figure>
-        <figure class="col grid-height push-up custom-link" id="g3" v-on:click="showModal('img3')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link" id="g3" v-on:click="showModal('img3')">
           <img
             id="img3"
             src="../assets/cynthia.jpg"
@@ -66,7 +66,7 @@
         </figure>
       </div>
       <div class="row mb-2">
-        <figure class="col grid-height push-up custom-link" id="g4" v-on:click="showModal('img4')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link mb-2 mb-sm-0" id="g4" v-on:click="showModal('img4')">
           <img
             id="img4"
             src="../assets/danjuma.jpg"
@@ -87,7 +87,7 @@
           </figcaption>
         </figure>
         <figure
-          class="col grid-height mx-2 push-up custom-link"
+          class="col-12 col-sm-auto grid-height mx-0 mx-sm-2 mb-2 mb-sm-0 push-up custom-link"
           id="g5"
           v-on:click="showModal('img5')"
         >
@@ -110,7 +110,7 @@
             <p>Chinasa</p>
           </figcaption>
         </figure>
-        <figure class="col grid-height push-up custom-link" id="g6" v-on:click="showModal('img6')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link" id="g6" v-on:click="showModal('img6')">
           <img
             id="img6"
             src="../assets/nnamdi.jpg"
@@ -131,7 +131,7 @@
         </figure>
       </div>
       <div class="row mb-2">
-        <figure class="col grid-height push-up custom-link" id="g7" v-on:click="showModal('img7')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link mb-2 mb-sm-0" id="g7" v-on:click="showModal('img7')">
           <img
             id="img7"
             src="../assets/obi_twins.jpg"
@@ -152,7 +152,7 @@
           </figcaption>
         </figure>
         <figure
-          class="col grid-height mx-2 push-up custom-link"
+          class="col-12 col-sm-auto grid-height mx-0 mx-sm-2 mb-2 mb-sm-0 push-up custom-link"
           id="g8"
           v-on:click="showModal('img8')"
         >
@@ -175,7 +175,7 @@
             <p>Favour</p>
           </figcaption>
         </figure>
-        <figure class="col grid-height push-up custom-link" id="g9" v-on:click="showModal('img9')">
+        <figure class="col-12 col-sm-auto grid-height push-up custom-link" id="g9" v-on:click="showModal('img9')">
           <img id="img9" src="../assets/jane.jpg" alt="Jane är en 6 år gammal flicka som drömmer om att få jobba med biokemi. Hon har fått hjälp för att fortsätta kunna gå i skolan, pga att hennes föräldrar har ekonomiska problem." style="display:none;" v-if="this.$store.state.isSwedish"/>
           <img id="img9" src="../assets/jane.jpg" alt="Jane is a 6 year old girl who dreams about working with biochemistry. She has been given aid in order to continue with her studies, as her parents are having financial problems." style="display:none;" v-if="!this.$store.state.isSwedish"/>
           <figcaption>
@@ -189,10 +189,10 @@
       <span class="close" v-on:click="closeModal()">&times;</span>
 
       <!-- Modal Content (The Image) -->
-      <div id="modal-content">hej</div>
+      <div id="modal-content"></div>
 
       <!-- Modal Caption (Image Text) -->
-      <div id="caption">hej</div>
+      <div id="caption"></div>
     </div>
   </div>
 </template>
@@ -200,10 +200,13 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      modal: false
+    };
   },
   methods: {
     showModal(imageId) {
+      this.modal = true;
       let modal = document.getElementById("myModal");
       let modalImg = document.getElementById(imageId);
       let captionText = document.getElementById("caption");
@@ -216,10 +219,11 @@ export default {
       modal.style.display = "block";
       modalImg.src = document.getElementById(imageId).src;
       captionText.innerHTML = document.getElementById(imageId).alt;
-      content.innerHTML = '<img class="myImg" src=' + modalImg.src + ">";
+      content.innerHTML = '<img class="myImg" style="max-width: 75%;" src=' + modalImg.src + ">";
       console.log("content:", content);
     },
     closeModal() {
+      this.modal = false;
       let modal = document.getElementById("myModal");
       modal.style.display = "none";
     }
@@ -395,5 +399,10 @@ figcaption p {
 }
 #g9 {
   background-image: url(../assets/jane.jpg);
+}
+@media (max-width: 1024px) {
+figcaption{
+  display: none;
+}
 }
 </style>
