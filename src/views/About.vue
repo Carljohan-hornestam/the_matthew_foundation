@@ -11,7 +11,7 @@
           <li class="mb-2 infolink" @click="isStatutes = true">Statutes</li>
         </ul>
       </div>
-      <div class="w-100">
+      <div class="w-100 d-block d-sm-none">
         <hr class="d-block d-sm-none my-0 mx-4"/>
       </div>
       <div id="about_info" class="col-12 col-sm-9 col-lg-10 text-left pt-4 pl-4" v-if="!isStatutes" >
