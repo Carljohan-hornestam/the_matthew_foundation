@@ -48,7 +48,7 @@
               <router-link to="/gallery" class="nav-link">Galleri</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/projects" class="nav-link">Projekt</router-link>
+              <router-link to="/projects" class="nav-link">Pågående hjälpinsatser</router-link>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
               <router-link to="/gallery" class="nav-link">Gallery</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/projects" class="nav-link">Current projects</router-link>
+              <router-link to="/projects" class="nav-link">Ongoing aid efforts</router-link>
             </li>
           </ul>
         </div>
