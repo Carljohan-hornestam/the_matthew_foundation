@@ -3,7 +3,7 @@
     <div class="bg-white pb-3 w-75" id="shadow">
       <b-form class="px-5" @reset="onReset" @submit="onSubmit" v-if="this.$store.state.isSwedish">
         <b-form-group
-          class="pt-3 pb-4 text-left"
+          class="pt-3 pb-2 pb-sm-4 text-left"
           id="input-group-2"
           name="name"
           label="Namn"
@@ -21,7 +21,7 @@
             v-if="this.form.name.length > 45"
           >Fältet får ej innehålla fler än 45 tecken.</b-form-invalid-feedback>
         </b-form-group>
-        <b-form-group class="text-left pb-4" id="input-group-1" label="Email" label-for="input-1">
+        <b-form-group class="text-left pb-2 pb-sm-4" id="input-group-1" label="Email" label-for="input-1">
           <b-form-input
             id="input-1"
             name="email"
@@ -34,7 +34,7 @@
         </b-form-group>
 
         <b-form-group
-          class="text-left pb-4"
+          class="text-left pb-2 pb-sm-4"
           id="input-group-1"
           label="Meddelande"
           label-for="input-1"
@@ -63,7 +63,7 @@
         v-if="!this.$store.state.isSwedish"
       >
         <b-form-group
-          class="pt-3 pb-4 text-left"
+          class="pt-3 pb-2 pb-sm-4 text-left"
           id="input-group-2"
           name="name"
           label="Name"
@@ -75,7 +75,7 @@
             v-if="this.form.name.length > 45"
           >The field can not contain more than 45 characters.</b-form-invalid-feedback>
         </b-form-group>
-        <b-form-group class="text-left pb-4" id="input-group-1" label="Email" label-for="input-1">
+        <b-form-group class="text-left pb-2 pb-sm-4" id="input-group-1" label="Email" label-for="input-1">
           <b-form-input
             id="input-1"
             name="email"
@@ -87,7 +87,7 @@
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group class="text-left pb-4" id="input-group-1" label="Message" label-for="input-1">
+        <b-form-group class="text-left pb-2 pb-sm-4" id="input-group-1" label="Message" label-for="input-1">
           <b-form-textarea
             id="textarea"
             name="msg"
@@ -190,5 +190,13 @@ export default {
 }
 #confirm_btn {
   background-color: #138032;
+}
+@media (max-width: 600px) {
+#confirm_btn{
+  font-size: 15px;
+}
+#reset_btn{
+  font-size: 15px;
+}
 }
 </style>
