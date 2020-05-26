@@ -2,39 +2,39 @@
   <div class="container pt-5 d-flex justify-content-center pb-5">
     <div class="bg-white" id="shadow">
       <div class="row py-5">
-        <div class="col-5 text-center">
+        <div class="col-sm-5 col-12 text-center">
           <img
             src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
             class="project-img"
           />
         </div>
-        <div class="col-7 project-text text-left pt-4">
+        <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
           <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
         </div>
       </div>
       <hr />
       <div class="row py-5">
-        <div class="col-5 text-center">
+        <div class="col-sm-5 col-12 text-center">
           <img
             src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
             class="project-img"
           />
         </div>
-        <div class="col-7 project-text text-left pt-4">
+        <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
           <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
         </div>
       </div>
       <hr />
       <div class="row py-5">
-        <div class="col-5 text-center">
+        <div class="col-sm-5 col-12 text-center">
           <img
             src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
             class="project-img"
           />
         </div>
-        <div class="col-7 project-text text-left pt-4">
+        <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
           <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
         </div>
@@ -67,5 +67,50 @@ hr {
 }
 h4 {
   font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 665px) {
+.project-img{
+  width: 250px;
+  height: 250px;
+}
+.project-text{
+  margin: 5px 10px;
+  padding-left: 15px !important;
+  text-align: center !important;
+}
+}
+@media (min-width: 665px) and (max-width: 750px){
+.project-img{
+  width: 200px;
+  height: 200px;
+  }
+.project-text{
+  padding-left: 40px !important;
+  padding-right: 10px !important;
+}  
+.row {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+hr{
+    margin: 0 29px;
+
+}
+}
+@media (max-width: 1030px) and (min-width: 750px) {
+.project-img{
+  width: 250px;
+  height: 250px;
+}
+.project-text{
+  padding-left: 30px;
+}
+.row{
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+hr{
+  margin: 0 29px;
+}
 }
 </style>
