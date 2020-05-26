@@ -1,42 +1,13 @@
 <template>
   <div class="container-fluid d-flex justify-content-between px-0">
     <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" id="tmfNav">
-      <div class="d-flex col justify-content-start">
+      <div class="d-flex col-3 justify-content-start">
         <router-link to="/" class="navbar-brand" id="logo_text">
           <h3>The Matthew Foundation</h3>
         </router-link>
       </div>
-      <b-dropdown dropleft variant="link" class="d-block d-lg-none" toggle-class="text-decoration-none" no-caret>
-        <template v-slot:button-content>
-          <span class="navbar-toggler-icon"></span>
-        </template>
-
-        <div class="nav-bg">
-          <b-dropdown-item>
-            <router-link to="/about" class="language">Om oss</router-link>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <router-link to="/contact" class="language">Kontakta oss</router-link>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <router-link to="/gallery" class="language">Galleri</router-link>
-          </b-dropdown-item>
-        </div>
-      </b-dropdown>
-      <!--<button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      -->
-      <div class="d-none d-lg-block col-auto">
-        <div v-if="this.$store.state.isSwedish" class="d-flex justify-content-end">
+      <div class="d-none d-lg-block col-6">
+        <div v-if="this.$store.state.isSwedish" class="d-flex justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/about" class="nav-link">Om oss</router-link>
@@ -52,8 +23,7 @@
             </li>
           </ul>
         </div>
-
-        <div v-if="!this.$store.state.isSwedish" class="d-flex col-auto justify-content-end">
+        <div v-if="!this.$store.state.isSwedish" class="d-flex justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About us</router-link>
@@ -70,23 +40,25 @@
           </ul>
         </div>
       </div>
-      <div class="d-none d-sm-block col">
+      <div class="col-3 d-flex justify-content-end phone">
         <div
           v-if="this.$store.state.isSwedish"
           v-on:click="changeLanguage(false)"
-          class="d-flex justify-content-end lang-link"
+          class="d-flex lang-link"
         >
-          <span class="language pr-1">Svenska</span>
+          <span class="language pr-1 d-none d-lg-block">Svenska</span>
           <img class="flag my-auto" src="../assets/sweden.png" />
         </div>
         <div
           v-if="!this.$store.state.isSwedish"
           v-on:click="changeLanguage(true)"
-          class="d-flex col justify-content-end lang-link"
+          class="d-flex lang-link"
         >
-          <span class="language pr-1">English</span>
+          <span class="language pr-1 d-none d-lg-block">English</span>
           <img class="flag my-auto" src="../assets/uk.png" />
         </div>
+        
+        <span class="navbar-toggler-icon d-block d-lg-none" @click="mobileNavToggle()"></span>
       </div>
     </nav>
   </div>
@@ -99,6 +71,9 @@ export default {
   methods: {
     changeLanguage(choice) {
       this.$store.commit("setIsSwedish", choice);
+    },
+    mobileNavToggle() {
+      this.$store.commit("mobileNavToggle");
     }
   }
 };
@@ -141,5 +116,47 @@ export default {
 }
 .dropdown-menu > li:last-child {
    margin-bottom: 15px;
+}
+@media (max-width: 420px) {
+.navbar{
+  padding: .5rem 0 !important;
+}
+.phone {
+  justify-content: space-around !important;
+}
+.flag {
+  height: 2.3vh;
+}
+.navbar-toggler-icon {
+  margin-left: 1vw;
+}
+}
+@media (min-width: 420px) and (max-width: 820px) {
+.flag {
+  height: 6vh;
+}
+.navbar-toggler-icon {
+  margin-left: 1vw;
+  height: 8vh;
+  width: 8vh;
+}
+}
+@media (min-width: 750px) and (max-width: 800px) {
+.flag {
+  height: 3.5vh;
+}
+.navbar-toggler-icon {
+  margin-left: 1vw;
+  height: 5vh;
+  width: 5vh;
+}
+h3 {
+  font-size: 2.25rem;
+}
+}
+@media (min-width: 821) and (max-width: 1200px) {
+.flag {
+  height: 2vh;
+}
 }
 </style>

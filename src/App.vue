@@ -2,6 +2,7 @@
   <div id="app">
     <div>
       <Navbar/>
+      <MobileNav class="d-block d-lg-none" v-if="this.$store.state.showMobileNav == true"/>
     </div>
     <div id="main">
     <router-view/>
@@ -10,10 +11,11 @@
 </template>
 <script>
 import Navbar from '@/components/Navbar.vue';
+import MobileNav from '@/components/MobileNav.vue';
 
 export default {
   components: {
-    Navbar,
+    Navbar, MobileNav
   }
 }
 </script>
