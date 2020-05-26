@@ -9,7 +9,7 @@
       <li class="mb-2">
         <h5>§ 2 FORM AND PURPOSE</h5>
         <p>The association is politically and religiously independent.</p>
-        <p>The association's purpose is to support children and adolescents in Ozobulo, Anambra state, Nigeria in their education and health care. By children and adolescents, i.e you are under eighteen years of age, in exceptional cases grants can be made to anyone who is more than eighteen years of age in the case of university studies.</p>
+        <p>The association's purpose is to support children and adolescents in Ozubulu, Anambra state, Nigeria in their education and health care. By children and adolescents, i.e you are under eighteen years of age, in exceptional cases grants can be made to anyone who is more than eighteen years of age in the case of university studies.</p>
         <p>All money raised shall go to the cause. No salary or other compensation shall be paid. Bank charges may be paid by the association when required.</p>
         <p>In order to receive compensation for studies, a mandatory environmental education must be carried out.</p>
       </li>

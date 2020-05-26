@@ -8,8 +8,8 @@
       </li>
       <li class="mb-2">
         <h5>§ 2 FORM OCH ÄNDAMÅL</h5>
-        <p>Föreningen är politiskt o religöst fristående.</p>
-        <p>Föreningens ändamål är att stödja barn och ungdomar i Ozobulo , Anambra state , Nigeria i deras utbildning o hälsovård. Med barn och ungdom menas att man är under arton år , i undantagsfall kan bidrag ges till den som är mer än arton år om det gäller universitetssudier.</p>
+        <p>Föreningen är politiskt och religöst fristående.</p>
+        <p>Föreningens ändamål är att stödja barn och ungdomar i Ozubulu, Anambra state, Nigeria i deras utbildning o hälsovård. Med barn och ungdom menas att man är under arton år , i undantagsfall kan bidrag ges till den som är mer än arton år om det gäller universitetssudier.</p>
         <p>Samtliga insamlade pengar skall gå till ändamålet. Ingen lön eller annan ersättning skall utgå. Bankavgifter kan betalas av föreningen då detta krävs.</p>
         <p>För att erhålla ersättning för studier skall en obligatorisk miljöutbildning genomföras.</p>
       </li>

@@ -16,8 +16,8 @@
       <p>Vårt mål blev där och då att hjälpa barn till ett värdigt och självförsörjande liv. Skolgång är i Nigeria det enda sättet att komma ur fattigdom.</p>
       <p>Då det inte fanns några befintliga pålitliga kanaler att hjälpa till genom bestämde vi oss för att starta en stiftelse, The Matthew Foundation.</p>
       <p>Vårt mål är att ge utsatta barn en möjlighet, en chans till utbildning och/eller sjukvård. Barn som vi och våra donatorer kan följa genom hela skolgången.</p>
-      <p>Allt arbete med detta görs självklart utan arvode.</p>
       <p>Vi vill ge tillbaka lite av den kärlek och värme dessa barn mötte oss med."</p>
+      <p><strong>Allt arbete med detta görs självklart utan arvode.</strong></p>
       <p>
         <strong>Cecilia Chidi Nilsson</strong>
       </p>
