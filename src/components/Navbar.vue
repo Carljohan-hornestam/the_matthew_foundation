@@ -58,7 +58,7 @@
           <img class="flag my-auto" src="../assets/uk.png" />
         </div>
         
-        <span class="navbar-toggler-icon d-block d-lg-none" @click="mobileNavToggle()"></span>
+        <span class="navbar-toggler-icon d-block d-lg-none" data-toggle="collapse" data-target="#dropMenu" ></span>
       </div>
     </nav>
   </div>

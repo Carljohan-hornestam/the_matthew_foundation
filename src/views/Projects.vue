@@ -10,7 +10,12 @@
         </div>
         <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
-          <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="this.$store.state.isSwedish"
+          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="!this.$store.state.isSwedish"
+          >hello hello hello hello hello hello hello hello hello hello</p>
         </div>
       </div>
       <hr />
@@ -23,7 +28,12 @@
         </div>
         <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
-          <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="this.$store.state.isSwedish"
+          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="!this.$store.state.isSwedish"
+          >hello hello hello hello hello hello hello hello hello hello</p>
         </div>
       </div>
       <hr />
@@ -36,7 +46,12 @@
         </div>
         <div class="col-sm-7 col-12 project-text text-left pt-4">
           <h4>Namn</h4>
-          <p>tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="this.$store.state.isSwedish"
+          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          <p
+            v-if="!this.$store.state.isSwedish"
+          >hello hello hello hello hello hello hello hello hello hello</p>
         </div>
       </div>
     </div>
@@ -69,48 +84,47 @@ h4 {
   font-family: "Quicksand", sans-serif;
 }
 @media (max-width: 665px) {
-.project-img{
-  width: 250px;
-  height: 250px;
-}
-.project-text{
-  margin: 5px 10px;
-  padding-left: 15px !important;
-  text-align: center !important;
-}
-}
-@media (min-width: 665px) and (max-width: 750px){
-.project-img{
-  width: 200px;
-  height: 200px;
+  .project-img {
+    width: 250px;
+    height: 250px;
   }
-.project-text{
-  padding-left: 40px !important;
-  padding-right: 10px !important;
-}  
-.row {
-  margin-left: 15px !important;
-  margin-right: 15px !important;
+  .project-text {
+    margin: 5px 10px;
+    padding-left: 15px !important;
+    text-align: center !important;
+  }
 }
-hr{
+@media (min-width: 665px) and (max-width: 750px) {
+  .project-img {
+    width: 200px;
+    height: 200px;
+  }
+  .project-text {
+    padding-left: 40px !important;
+    padding-right: 10px !important;
+  }
+  .row {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  hr {
     margin: 0 29px;
-
-}
+  }
 }
 @media (max-width: 1030px) and (min-width: 750px) {
-.project-img{
-  width: 250px;
-  height: 250px;
-}
-.project-text{
-  padding-left: 30px;
-}
-.row{
-  margin-left: 15px !important;
-  margin-right: 15px !important;
-}
-hr{
-  margin: 0 29px;
-}
+  .project-img {
+    width: 250px;
+    height: 250px;
+  }
+  .project-text {
+    padding-left: 30px;
+  }
+  .row {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  hr {
+    margin: 0 29px;
+  }
 }
 </style>

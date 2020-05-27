@@ -2,7 +2,7 @@
   <div id="app">
     <div>
       <Navbar/>
-      <MobileNav class="d-block d-lg-none" v-if="this.$store.state.showMobileNav == true"/>
+      <MobileNav/>
     </div>
     <div id="main">
     <router-view/>

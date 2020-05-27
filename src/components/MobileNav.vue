@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-bg">
+    <div class="nav-bg collapse" id="dropMenu">
         <ul style="list-style: none;" v-if="this.$store.state.isSwedish">
             <li class="nav-item">
               <router-link to="/about" class="nav-link">Om oss</router-link>

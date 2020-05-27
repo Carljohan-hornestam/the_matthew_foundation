@@ -126,8 +126,8 @@ h4 {
 
 @media (max-width: 420px) {
   .about img {
-    width: 70vw;
-    height: 30vh;
+    width: 80vw;
+    height: 25vh;
   }
 }
 @media (min-width: 420px) and (max-width: 700px) {
