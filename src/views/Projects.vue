@@ -4,7 +4,7 @@
       <div class="row py-5">
         <div class="col-sm-5 col-12 text-center">
           <img
-            src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
+            src="http://www.spicyauctiontemplates.com/samples/blue/insertimagehere.gif"
             class="project-img"
           />
         </div>
@@ -12,17 +12,17 @@
           <h4>Namn</h4>
           <p
             v-if="this.$store.state.isSwedish"
-          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          >Brödtext</p>
           <p
             v-if="!this.$store.state.isSwedish"
-          >hello hello hello hello hello hello hello hello hello hello</p>
+          >Body text</p>
         </div>
       </div>
       <hr />
       <div class="row py-5">
         <div class="col-sm-5 col-12 text-center">
           <img
-            src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
+            src="http://www.spicyauctiontemplates.com/samples/blue/insertimagehere.gif"
             class="project-img"
           />
         </div>
@@ -30,17 +30,17 @@
           <h4>Namn</h4>
           <p
             v-if="this.$store.state.isSwedish"
-          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          >Brödtext</p>
           <p
             v-if="!this.$store.state.isSwedish"
-          >hello hello hello hello hello hello hello hello hello hello</p>
+          >Body text</p>
         </div>
       </div>
       <hr />
       <div class="row py-5">
         <div class="col-sm-5 col-12 text-center">
           <img
-            src="https://cdn.kronfagel.se/app/uploads/2019/07/Korv-med-br%C3%B6d-toppat-med-karmelliserad-l%C3%B6k-och-senapsmajonn%C3%A4s.jpg"
+            src="http://www.spicyauctiontemplates.com/samples/blue/insertimagehere.gif"
             class="project-img"
           />
         </div>
@@ -48,10 +48,10 @@
           <h4>Namn</h4>
           <p
             v-if="this.$store.state.isSwedish"
-          >tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis tjenis</p>
+          >Brödtext</p>
           <p
             v-if="!this.$store.state.isSwedish"
-          >hello hello hello hello hello hello hello hello hello hello</p>
+          >Body text</p>
         </div>
       </div>
     </div>
