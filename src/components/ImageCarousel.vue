@@ -6,7 +6,7 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active img1">
             <div class="carousel-caption">
-              <h2 class="display-4">Jane och Joy</h2>
+              <h2 class="display-4">Jane & Joy</h2>
               <p
                 class="lead d-none d-md-block"
                 v-if="this.$store.state.isSwedish"

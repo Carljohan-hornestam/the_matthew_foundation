@@ -184,7 +184,7 @@
         </figure>
       </div>
     </div>
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" v-on:click="closeModal()">
       <!-- The Close Button -->
       <span class="close" v-on:click="closeModal()">&times;</span>
 
