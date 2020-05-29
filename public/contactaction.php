@@ -1,7 +1,7 @@
 <?php
 
 $errors = '';
-$myemail = 'admin@matthewfoundation.se';//<-----Put Your email address here.
+$myemail = 'info@matthewfoundation.se';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['message']))

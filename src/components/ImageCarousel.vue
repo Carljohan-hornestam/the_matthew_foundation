@@ -10,11 +10,11 @@
               <p
                 class="lead d-none d-md-block"
                 v-if="this.$store.state.isSwedish"
-              >Tvillingarna är barn till en målare, som har varit arbetslös i flera år pga att han har tagit hand om sin sjuka mamma. Familjen har fått hjälp för att kunna återhämta sig.</p>
+              >Tvillingarna är barn till en målare, som har varit arbetslös i flera år pga att han har tagit hand om sin sjuka mamma.</p>
               <p
                 class="lead d-none d-md-block"
                 v-if="!this.$store.state.isSwedish"
-              >The twin's father is a painter, who has been unemployed for several years due to him taking care of his ill mother. The family has been helped, in order to recover. </p>
+              >The twin's father is a painter, who has been unemployed for several years due to him taking care of his ill mother.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -24,11 +24,11 @@
               <p
                 class="lead d-none d-md-block"
                 v-if="this.$store.state.isSwedish"
-              >Den här lilla pojken har kämpat mot bland annat hjärtproblem sen födseln. Han har fått vårdstöd.</p>
+              >Den här lilla pojken har kämpat mot bland annat hjärtproblem sen födseln.</p>
               <p
                 class="lead d-none d-md-block"
                 v-if="!this.$store.state.isSwedish"
-              >This little boy has been fighting heart condition since he was born. He has been given economic support for healthcare.</p>
+              >This little boy has been fighting heart condition since he was born.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->

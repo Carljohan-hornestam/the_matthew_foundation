@@ -6,14 +6,14 @@
           <img
             id="img1"
             src="../assets/chidera.jpg"
-            alt="Den här lilla pojken Chidera, har kämpat mot bland annat hjärtproblem sen födseln. Han har fått ekonomiskt stöd till vård."
+            alt="Den här lilla pojken Chidera, har kämpat mot bland annat hjärtproblem sen födseln."
             style="display:none;"
             v-if="this.$store.state.isSwedish"
           />
           <img
             id="img1"
             src="../assets/chidera.jpg"
-            alt="This little boy Chidera, has been fighting a heart condition since he was born. He has been given economic support for healthcare."
+            alt="This little boy Chidera, has been fighting a heart condition since he was born."
             style="display:none;"
             v-if="!this.$store.state.isSwedish"
           />
@@ -94,14 +94,14 @@
           <img
             id="img5"
             src="../assets/Handover.jpg"
-            alt="Chinaza är fjorton år gammal och lider av höftledsnekros, och har utvecklat svår värk i både kropp och ben. Hon har fått pengar för vård, samt en moped så att hon kan ta sig till b la skolan."
+            alt="Chinasa är fjorton år gammal och lider av höftledsnekros, och har utvecklat svår värk i både kropp och ben. Hon har fått pengar till en moped så att hon kan ta sig till b la skolan."
             style="display:none;"
             v-if="this.$store.state.isSwedish"
           />
           <img
             id="img5"
             src="../assets/Handover.jpg"
-            alt="Chinaza is fourteen years old and suffers from sickle cell anemia, and has developed severe pain in both body and leg. She has received money for care, as well as a moped so she can get to school."
+            alt="Chinasa is fourteen years old and suffers from sickle cell anemia, and has developed severe pain in both body and leg. She has received money for a moped so she can get to school."
             style="display:none;"
             v-if="!this.$store.state.isSwedish"
           />
@@ -135,14 +135,14 @@
           <img
             id="img7"
             src="../assets/obi_twins.jpg"
-            alt="De två små tvillingarna Jane och Joy är nyfödda barn till Ejike Obi från Ozubulu i sydöstra Nigeria, Ejike är en målare men har varit arbetslös i flera år på grund av att han har tagit hand om sin sjuka mamma som fick diagnosen levercirrhos, tyvärr gick hon bort sent 2019. Den lilla familjen har fått ekonomiskt stöd för att komma på fötter igen."
+            alt="De två små tvillingarna Jane och Joy är nyfödda barn till Ejike Obi från Ozubulu i sydöstra Nigeria, Ejike är en målare men har varit arbetslös i flera år på grund av att han har tagit hand om sin sjuka mamma som fick diagnosen levercirrhos, tyvärr gick hon bort sent 2019."
             style="display:none;"
             v-if="this.$store.state.isSwedish"
           />
           <img
             id="img7"
             src="../assets/obi_twins.jpg"
-            alt="The two little twins Jane and Joy are newborns to Ejike Obi from Ozubulu in southeastern Nigeria, Ejike is a painter but has been unemployed for several years due to taking care of his sick mother who was diagnosed with liver cirrhosis, unfortunately she passed away late 2019. The little family has received financial support to get back on their feet."
+            alt="The two little twins Jane and Joy are newborns to Ejike Obi from Ozubulu in southeastern Nigeria, Ejike is a painter but has been unemployed for several years due to taking care of his sick mother who was diagnosed with liver cirrhosis, unfortunately she passed away late 2019."
             style="display:none;"
             v-if="!this.$store.state.isSwedish"
           />
