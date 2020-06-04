@@ -8,6 +8,9 @@
     </div>
 
     <div v-if="this.$store.state.isSwedish">
+      <p>
+        <em>Grundarna Cecilia Chidl Nilsson och Jan Hammarström med Cecilias familj. Cecilia andra från höger och Jan i bakgrunden.</em>
+      </p>
       <p class="pt-4">
         "Jag förlorade som barn min pappa Matthew i en bilolycka. Då tappade jag
         tyvärr även kontakten med släkten. 2019 bestämde jag och Janne oss för
@@ -46,12 +49,18 @@
         Vi vill ge tillbaka lite av den kärlek och värme dessa barn mötte oss
         med."
       </p>
-      <p><strong>Allt arbete med detta görs självklart utan arvode.</strong></p>
+      <p>
+        <strong>Allt arbete med detta görs självklart utan arvode.</strong>
+      </p>
       <p>
         <strong>Cecilia Chidi Nilsson</strong>
       </p>
     </div>
     <div v-if="!this.$store.state.isSwedish">
+      <p>
+        <em>The founders Cecilia Chidl Nilsson and Jan Hammarström with Cecilia's family. Cecilia second from the right and Jan in the background.</em>
+      </p>
+
       <p class="pt-4">
         "As a child, I lost my father, Matthew, in a car accident. Then I
         unfortunately lost contact with my family as well. In 2019, me and Janne
@@ -90,7 +99,9 @@
         We want to give back some of the love and warmth these children gave
         us."
       </p>
-      <p><strong>All work is obviously done without emolument.</strong></p>
+      <p>
+        <strong>All work is obviously done without emolument.</strong>
+      </p>
 
       <p>
         <strong>Cecilia Chidi Nilsson</strong>
