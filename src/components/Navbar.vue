@@ -29,7 +29,7 @@
               <router-link to="/about" class="nav-link">About us</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Contact/Donate</router-link>
+              <router-link to="/contact" class="nav-link" href="#">Contact/Donate</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/gallery" class="nav-link">Gallery</router-link>
