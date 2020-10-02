@@ -5,7 +5,7 @@
               <router-link to="/about" class="nav-link">Om oss</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Kontakt</router-link>
+              <router-link to="/contact" class="nav-link">Kontakt/Donera</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/gallery" class="nav-link">Galleri</router-link>
@@ -19,7 +19,7 @@
               <router-link to="/about" class="nav-link">About us</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Contact</router-link>
+              <router-link to="/contact" class="nav-link">Contact/Donate</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/gallery" class="nav-link">Gallery</router-link>
