@@ -27,6 +27,7 @@
               <strong>Matthew Foundation</strong>
             </li>
             <li class="mb-2">Bankgiro: 5373-5015</li>
+            <li class="mb-2">Swish: 123 3654 142</li>
           </ul>
         </div>
       </div>
